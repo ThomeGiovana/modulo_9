@@ -36,9 +36,9 @@ $a_{h1} = \sigma(z_{h1}) = \sigma(0.225) = 0.5560$
 
 Para o neurônio $h_2$:
 
-$z_{h2} = w_2*i_1+ w_4 * i_2$
+$z_{h2} = w_2 * i_1+ w_4 * i_2$
 
-$z_{h2} = 0.2*0.5 + 0.3* 0.6$
+$z_{h2} = 0.2 * 0.5 + 0.3 * 0.6$
 
 $z_{h2} = 0.28$
 
@@ -114,7 +114,7 @@ Calculando separadamente cada uma das derivadas:
 
 $\frac{dC}{da_o} = \frac{d}{da_o} (y-a_o)^2 = \frac{d}{du} (u)^2 \frac{d}{da_o} (y-a_o) = 2u*(-1) = 2(y-a_o)(-1) = -2(y-a_o) = -2(0.5-0.6174) = 2.1174$
 
-$\frac{da_o}{dz_{o}} = \frac{d}{dz_{o}} \sigma(z_o)= \sigma(z_o)*(1-\sigma(z_o)) = a_{o}*(1-a_{o})= 0.6174(1-0.6174) = 0.2362$
+$\frac{da_o}{dz_{o}} = \frac{d}{dz_{o}} \sigma(z_o)= \sigma(z_o) * (1-\sigma(z_o)) = a_{o} * (1-a_{o}) = 0.6174(1-0.6174) = 0.2362$
 
 $\frac{dz_{o}}{dw_5} = \frac{d}{dw_5} w_5 a_{h1} + \frac{d}{dw_5}w_6 a_{h2} = a_{h1} = 0.5560$
 
@@ -240,7 +240,7 @@ $new_{w2} = \alpha-w_2 * gradiente_{w_2} = 0.5 - 0.20 * 0.0586 = 0.4882$
 
 $new_{w3} = \alpha-w_3 * gradiente_{w_3} = 0.5 - 0.25 * 0.0296 = 0.4926$
 
-$new*{w4} = \alpha-w_4 \* gradiente*{w_4} = 0.5 - 0.30 \* 0.0704 = 0.4957$ 
+$new_{w4} = \alpha-w_4 * gradiente_{w_4} = 0.5 - 0.30 * 0.0704 = 0.4957$ 
 
 $new_{w5} = \alpha-w_5 * gradiente_{w_5} = 0.5 - 0.40 * 0.2780 = 0.3888$
 
